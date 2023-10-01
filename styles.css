@@ -245,28 +245,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Empilhar itens em dispositivos menores */
-        align-items: flex-start; /* Alinhar à esquerda */
+    .hero, .menu-section, .contact-section {
+        max-width: 100%;
     }
-
-    .nav-links {
-        margin-top: 10px; /* Espaçamento entre os links */
+    h1, h2, h3, p, ul, li {
+        font-size: 12px; 
     }
-
-    .nav-links li {
-        margin-right: 0; /* Remover espaçamento horizontal entre os itens */
-        margin-bottom: 10px; /* Espaçamento vertical entre os itens */
+    img {
+        max-width: 100%;
+        height: auto;
     }
-    .hero h1 {
-        font-size: 1.5rem; /* Tamanho da fonte reduzido para dispositivos menores */
-    }
-    .footer-content {
-        flex-direction: column; /* Empilhar os elementos em dispositivos menores */
-        text-align: center;
-    }
-
-    .footer-logo img {
-        margin-bottom: 10px; /* Espaçamento entre a logo e o texto no footer */
-    }
+    
 }
