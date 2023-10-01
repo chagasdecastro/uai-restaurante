@@ -251,9 +251,23 @@ footer {
     h1, h2, h3, p, ul, li {
         font-size: 12px; 
     }
-    img {
+    .hero-content img {
         max-width: 100%;
-        height: auto;
+        max-height: auto; 
+        display: block;
+        margin: 0 auto;
+    }
+    .hero h1 {
+        font-size: 15px;
+    }
+    .menu-cards {
+        display: flex;
+        flex-wrap: wrap; /* Isso permite que os cards se ajustem à largura da tela */
+        justify-content: space-between; /* Distribui os cards horizontalmente com espaço entre eles */
     }
     
+    .menu-card {
+        width: calc(33.33% - 20px); /* Defina a largura desejada para os cards */
+        margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+    }
 }
