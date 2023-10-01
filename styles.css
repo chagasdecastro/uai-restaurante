@@ -250,7 +250,7 @@ footer {
         max-width: 100%;
     }
 
-    h1, h2, h3, p, ul, li {
+    h2, h3, p, ul, li {
         font-size: 12px; 
     }
 
@@ -261,7 +261,7 @@ footer {
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .menu-cards {
@@ -272,6 +272,46 @@ footer {
     .menu-card {
         width: 100%; /* Defina a largura total para ocupar a largura do contêiner pai */
         margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+    }
+
+    .form-card {
+        width: 100%; /* Defina a largura total para ocupar a largura do contêiner pai */
+        max-width: 600px; /* Defina uma largura máxima para o formulário, se necessário */
+        margin: 0 auto; /* Centralize o formulário horizontalmente */
+        padding: 20px; /* Adicione um espaçamento interno ao formulário */
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.671);
+        transition: transform 0.3s ease;
+    }
+    
+    .form-card form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-card input[type="text"],
+    .form-card input[type="email"],
+    .form-card textarea,
+    .form-card button {
+        width: 100%; /* Defina a largura total para ocupar a largura do formulário */
+        padding: 10px;
+        margin: 10px 0; /* Adicione espaçamento vertical entre os elementos do formulário */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .form-card button {
+        background-color: #ff4500;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .form-card button:hover {
+        background-color: #d23200;
     }
     
 }
